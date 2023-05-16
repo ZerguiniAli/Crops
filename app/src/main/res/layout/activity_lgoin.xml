@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Lgoin">
+
+    <RelativeLayout
+        android:id="@+id/topbackground"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/logintopbackground">
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:alpha="0.6"
+            android:background="@drawable/pattern" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topbackground"
+        android:layout_marginTop="-30dp"
+        android:background="@drawable/loginandsignupback">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/switchlogin"
+            app:menu="@menu/menu1"
+            android:background="@drawable/navigationbar"
+            app:itemTextColor="@drawable/item_selector"
+            app:itemIconTint="@drawable/item_selector"/>
+        <RelativeLayout
+            android:id="@+id/switchlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/switchlogin"
+            android:windowSoftInputMode="adjustResize"
+
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/lotus2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/circle"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/mainlayout"
+        android:layout_marginTop="-40dp">
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/lotus" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191A30"
+    android:orientation="vertical"
+    tools:context=".FirstPageActivity">
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/topbackground">
+
+        <RelativeLayout
+            android:id="@+id/pattern"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:alpha="0.6"
+            android:background="@drawable/pattern" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/pattern"
+            android:text="CROPS"
+            android:layout_marginTop="-50dp"
+            android:fontFamily="@font/bauhs"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:alpha="0.6"/>
+    </RelativeLayout>
+    <RelativeLayout
+    android:id="@+id/lotus2"
+    android:layout_width="90dp"
+    android:layout_height="90dp"
+    android:background="@drawable/circle"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/topLayout"
+    android:layout_marginTop="-40dp">
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/lotus" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lotus2"
+        android:padding="20sp"
+        android:gravity="center"
+        android:layout_marginTop="-20dp"
+        >
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:textColor="#56ab2f"
+            android:text="Manage your "
+            android:layout_centerHorizontal="true"
+            android:textSize="40dp"
+            android:fontFamily="@font/chesnagroteskmedium"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:textColor="#56ab2f"
+            android:text="fields with"
+            android:fontFamily="@font/chesnagroteskmedium"
+
+            android:layout_centerHorizontal="true"
+            android:textSize="40dp"
+            android:layout_below="@id/text1"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:textColor="#56ab2f"
+            android:text="ease"
+            android:layout_centerHorizontal="true"
+            android:textSize="40dp"
+            android:layout_below="@id/text2"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#56ab2f"
+            android:text="With our application you can Manage your fields more easily and qcuickly"
+            android:textSize="15dp"
+            android:fontFamily="@font/chesnagroteskmedium"
+            android:layout_below="@id/text3"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="350dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="50dp"
+            android:layout_below="@id/text4"
+            android:layout_marginTop="20sp"
+            android:backgroundTint="#56ab2f"
+            app:cornerRadius="5sp"
+            android:text="GET-STARted"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:onClick="start"
+            android:fontFamily="@font/chesnagroteskmedium"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+</RelativeLayout>

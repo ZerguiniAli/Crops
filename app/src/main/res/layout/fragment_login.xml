@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191A30"
+    android:id="@+id/Login"
+    android:padding="40dp"
+    android:gravity="center"
+    tools:context=".Login">
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="#56ab2f"
+            android:textSize="30dp"
+            android:fontFamily="@font/chesnagroteskmedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login"
+            android:layout_marginTop="50dp"
+            android:text="Username :"
+            android:textColor="#56ab2f"
+            android:fontFamily="@font/chesnagroteskmedium"
+
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editusername"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:fontFamily="@font/chesnagroteskmedium"
+
+            android:layout_below="@id/username"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_text"
+            android:padding="10dp"
+            android:textColor="#56ab2f"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editusername"
+            android:layout_marginTop="30dp"
+            android:text="Password :"
+            android:textColor="#56ab2f"
+            android:textSize="20dp"
+            android:fontFamily="@font/chesnagroteskmedium"
+
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editpassword"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/password"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_text"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:fontFamily="@font/chesnagroteskmedium"
+            android:textColor="#56ab2f"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/editpassword"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#56ab2f"
+            android:gravity="center"
+            android:fontFamily="@font/chesnagroteskmedium"
+
+            android:onClick="login"
+            android:text="LOGIN"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/forgetclick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button"
+            android:layout_marginTop="20dp"
+            android:text="Forget password"
+            android:textColor="#56ab2f"
+            android:textSize="20dp"
+            android:fontFamily="@font/chesnagroteskmedium"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

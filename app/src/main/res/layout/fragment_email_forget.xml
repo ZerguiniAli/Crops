@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191A30"
+    android:id="@+id/email_forget"
+    tools:context=".email_forget">
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <TextView
+            android:id="@+id/froget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You forget you password !!"
+            android:textColor="#56ab2f"
+            android:textSize="25dp"
+            android:fontFamily="@font/chesnagroteskmedium"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Your email to continue"
+            android:layout_below="@id/froget"
+            android:textColor="#56ab2f"
+            android:textSize="20dp"
+            android:fontFamily="@font/chesnagroteskmedium"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email :"
+            android:textColor="#56ab2f"
+            android:textSize="20dp"
+            android:fontFamily="@font/chesnagroteskmedium"
+            android:textStyle="bold"
+            android:layout_below="@id/text"
+            android:layout_marginTop="20dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/username"
+            android:background="@drawable/edit_text"
+            android:id="@+id/email_edit"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:textColor="#56ab2f"
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/email_edit"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#56ab2f"
+            android:gravity="center"
+            android:fontFamily="@font/chesnagroteskmedium"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
